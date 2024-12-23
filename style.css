@@ -3,7 +3,7 @@ body {
     font-family: 'Georgia', serif; /* Classic serif font for vintage feel */
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
     background: #906329;
     background-attachment: fixed;
 }
@@ -36,7 +36,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
