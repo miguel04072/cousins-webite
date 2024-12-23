@@ -16,6 +16,8 @@ header {
     align-items: center;
     padding: 15px 30px;
     font-family: 'Georgia', serif;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 header .logo {
@@ -140,6 +142,8 @@ button:hover {
     background-color: #ffffff;
     text-align: center;
     -webkit-text-fill-color: #000000;
+    width: 100%; /* Ensure full-width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 #contact form {
@@ -155,7 +159,8 @@ button:hover {
     font-size: 16px;
     border: 2px solid #7b6025;
     border-radius: 5px;
-    width: 100%;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 #contact button {
@@ -166,6 +171,8 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Full width button */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 #contact button:hover {
@@ -180,6 +187,8 @@ footer {
     text-align: center;
     padding: 15px 0;
     font-size: 18px;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 footer a {
