@@ -1,212 +1,62 @@
-/* General Body Styling */ 
+/* Global Styles */
 body {
-    font-family: 'Georgia', serif; /* Classic serif font for vintage feel */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #000000; /* Default text color is black */
-    background: #906329;
-    background-attachment: fixed;
+    background-color: white;
 }
 
 /* Header */
 header {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    font-family: 'Georgia', serif;
-    width: 100%; /* Ensure it spans the full width */
-    box-sizing: border-box; /* Prevent overflow */
-}
-
-header .logo {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-style: italic;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    color: #ffffff; /* Set hover color to white */
-}
-
-/* Hero Section */
-#hero {
-    text-align: center;
-    padding: 80px 20px;
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-    font-family: 'Georgia', serif;
-}
-
-#hero h1 {
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #ffffff; /* Header color to white */
-}
-
-/* About Section */
-#about {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    color: #ffffff; /* Header color to white */
-}
-
-#about p {
-    font-size: 20px;
-    line-height: 1.6;
-    font-family: 'Georgia', serif;
-    color: #000000; /* Text color is black */
-}
-
-/* Music Section */
-#music {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f8f4e3;
-}
-
-.music-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.music-card {
-    background-color: #4E2A84;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.music-card h3 {
-    font-size: 24px;
-    font-family: 'Georgia', serif;
-    color: #ffd700;
-}
-
-button {
-    background-color: #ffd700;
-    color: #4E2A84;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-button:hover {
-    background-color: #4E2A84;
-    color: #fff;
-}
-
-/* Videos Section */
-#videos {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#videos h2 {
-    color: #ffffff; /* Header color to white */
-}
-
-#videos iframe {
-    border: 5px solid #5e4306;
-    border-radius: 10px;
-    max-width: 400%;
-    height: 170px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Contact Section */
-#contact {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    -webkit-text-fill-color: #000000;
-    width: 100%; /* Ensure full-width */
-    box-sizing: border-box; /* Prevent overflow */
-}
-
-#contact h2 {
-    color: #ffffff; /* Header color to white */
-}
-
-#contact p {
-    color: #000000; /* Text color is black */
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#contact input, #contact textarea {
-    padding: 12px;
-    font-size: 16px;
-    border: 2px solid #7b6025;
-    border-radius: 5px;
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Prevent overflow */
-}
-
-#contact button {
-    padding: 15px;
-    font-size: 18px;
-    background-color: #825f2a;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%; /* Full width button */
-    box-sizing: border-box; /* Prevent overflow */
-}
-
-#contact button:hover {
-    background-color: #ffffff;
-    color: #000000; /* Text color changes to black */
-}
-
-/* Fixed Footer Panel */
-.fixed-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Ensure it spans the full width of the screen */
-    background-color: #906329; /* Background color */
-    color: #fff;
+    background-color: lightbrown;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    font-size: 16px;
-    font-family: 'Georgia', serif;
-    z-index: 9999; /* Ensure it's above other content */
-    }
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: darkbrown;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #3b3b3b;
+}
+
+/* Content Area */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: lightbrown;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
